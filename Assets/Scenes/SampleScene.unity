@@ -406,6 +406,28 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.29019615
       objectReference: {fileID: 0}
+    - target: {fileID: 4529813312309715857, guid: 6a7c3823550f3db41888d2e07fe4957f,
+        type: 3}
+      propertyPath: m_LightCookieSprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866996200608603365, guid: 6a7c3823550f3db41888d2e07fe4957f,
+        type: 3}
+      propertyPath: _lightCookies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866996200608603365, guid: 6a7c3823550f3db41888d2e07fe4957f,
+        type: 3}
+      propertyPath: _lightCookies.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f9cff8120560e84b8ce57a01fd29bff,
+        type: 3}
+    - target: {fileID: 5866996200608603365, guid: 6a7c3823550f3db41888d2e07fe4957f,
+        type: 3}
+      propertyPath: _lightCookies.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4207a04c1f7cf1344b190ef96fd52cf4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7c3823550f3db41888d2e07fe4957f, type: 3}
 --- !u!1 &194763702

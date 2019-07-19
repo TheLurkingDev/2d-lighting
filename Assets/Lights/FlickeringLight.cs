@@ -11,8 +11,11 @@ public class FlickeringLight : MonoBehaviour
     private const float _minIntensity = 0.3f;
     private const float _maxIntensity = 1.0f;
 
-    private const float _minRadius = 0.8f;
-    private const float _maxRadius = 1.75f;
+    private const float _minRadius = 1.2f;
+    private const float _maxRadius = 2.75f;
+
+    [SerializeField]
+    private Sprite[] _lightCookies;
 
     private bool _waiting;
 
@@ -34,7 +37,7 @@ public class FlickeringLight : MonoBehaviour
         _waiting = true;
         yield return new WaitForSeconds(RandomFlickerInterval());
         _light.intensity = RandomIntensity();
-        _light.pointLightOuterRadius = RandomRadius();
+        _light.pointLightOuterRadius = RandomRadius();        
         _waiting = false;
     }
 
@@ -51,5 +54,15 @@ public class FlickeringLight : MonoBehaviour
     private float RandomRadius()
     {
         return Random.Range(_minRadius, _maxRadius);
+    }
+
+    /// <summary>
+    /// Not used. Property currently only has a 'getter'.
+    /// </summary>
+    /// <returns></returns>
+    private Sprite RandomLightCookie()
+    {
+        var maxArrayCount = _lightCookies.Length - 1;
+        return _lightCookies[Random.Range(0, maxArrayCount)];
     }
 }
